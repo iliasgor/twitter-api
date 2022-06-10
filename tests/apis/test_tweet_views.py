@@ -11,5 +11,5 @@ class TestTweetView(TestCase):
     def test_tweet(self):
         response = self.client.get("/tweets/hello")
         text = response.data.decode()
-        print(text)
+        #print(text)
         self.assertIn("Goodbye", text)
